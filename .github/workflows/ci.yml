@@ -2,8 +2,12 @@ name: End-to-end tests
 on:
   push:
     branches:
-      - "dev"
-      - "!main"
+      - dev
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
