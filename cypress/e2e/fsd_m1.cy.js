@@ -28,7 +28,7 @@ describe("Web Dev 1", () => {
           .and(
             "have.attr",
             "src",
-            "./assets/images/rocketElevators/favicon.icon"
+            "./assets/images/rocketElevators/favicon.ico"
           );
       });
   });
